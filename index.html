@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hollow Knight</title>
+    <link rel="shortcut icon" type="image/png" href="images/website_logo.jpg" />
+  </head>
+
+  <body>
+    <div class="left dark-grey">
+      <div class="top-left red">
+        <img src="images/Hollow_Knight_Cover" id="main-image" />
+      </div>
+
+      <div class="bottom-left black center-content" id="textbox">
+        <p>Greetings Travelers.Welcome to the world of Hollow Knight.</p>
+      </div>
+    </div>
+
+    <div class="right light-grey">
+      <div class="top-row dark-grey center-content">
+        <div class="IBox navy center-content">
+          <img
+            class="contain-image clickable1"
+            src="images/Stag.jpg"
+            onclick="last_stag()"
+          />
+        </div>
+        <div class="IBox green center-content">
+          <img
+            class="contain-image clickable1"
+            src="images/Stillhornet.jpg"
+            onclick="hornet()"
+          />
+        </div>
+      </div>
+
+      <div class="bottom-row black">
+        <div class="IBox orange center-content">
+          <img
+            class="contain-image clickable1"
+            src="images/radiencestill.jpg"
+            onclick="radience()"
+          />
+        </div>
+        <div class="IBox black center-content">
+          <img
+            class="contain-image clickable1"
+            src="images/Hollow.jpg"
+            onclick="hollow()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <audio loop src="sounds/Hornet Audio.wav" id="Slash"></audio>
+    <audio
+      loop
+      src="sounds/Transformation Theme Song.wav"
+      id="Transform"
+    ></audio>
+
+    <audio
+      loop
+      src="sounds/Hunter x Hunter OST  Phantom Troupe Theme Song.wav"
+      id="Heavenly"
+    ></audio>
+
+    <audio
+      loop
+      src="sounds/Horse Gallop Sound Effect   YouTube [ ezmp3.cc ].mp3"
+      id="Gallop"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

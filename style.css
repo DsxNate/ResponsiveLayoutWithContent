@@ -1,0 +1,220 @@
+/* Add filters: https://www.w3schools.com/cssref/css3_pr_filter.asp */
+/* Make your own favicon: https://favicon.io/ */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Imbue:opsz,wght@10..100,100..900&display=swap');
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  background-color: #141414;
+  overflow: hidden; /* No more scrolling */
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+
+.top-left {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.bottom-left {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  color: white; /* Set the text color to white */
+  font-family: "Imbue", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 21px;
+  border: 3px solid white; /* White solid border */
+}
+.top-row {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.bottom-row {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.IBox {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: 100%; /* Ensure the image maintains its aspect ratio */
+  max-height: 100%; /* Ensure it doesn't overflow the container */
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.gone {
+  display: none;
+}
+
+/* colors */
+
+.blue {
+  background-color: #2955dc;
+}
+.black {
+  background-color: #000000;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.green {
+  background-color: #489b08;
+}
+.yellow {
+  background-color: #effc00;
+}
+.purple {
+  background-color: #6d0197;
+}
+.orange {
+  background-color: #f47a00;
+}
+.red {
+  background-color: #f40000;
+}
+.navy {
+  background-color: #1e63fa;
+}
+/* want to make something happen when you hover?
+img:hover {
+  cursor: pointer;
+}
+*/
+
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: block;
+  }
+  .left {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+ 
+  .top-left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  .right {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+
+  .top-row {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+
+  .bottom-row {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+
+  .IBox {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .bottom-left {
+    display: none;
+  }
+}
+.clickable1 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+/* changes to the style when the user HOVERS */
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+/* changes to the style when the user CLICKS */
+.clickable1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+  /* Makes button smaller when clicked*/
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    display: block;
+  }
+
+  .top-left {
+    height: 100%;
+    width: 100%;
+    fill
+    display: block;
+  }
+
+  .left {
+    height: 30%;
+    width: 100%;
+    display: block;
+  }
+  .right {
+    height: 70%;
+    width: 100%;
+    display: block;
+  }
+
+  .top-row {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+
+  .bottom-row {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+
+  .IBox {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+
+  .bottom-left {
+    display: none;
+  }
+}
